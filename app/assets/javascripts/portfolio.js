@@ -1,14 +1,26 @@
-var slideIndex = 0;
-showSlides();
+var imageCount = 1;
+var total = 6;
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+function photo(x) {
+	var image = document.getElementById('image');
+	imageCount = imageCount + x;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}
+	image.src = "Images/img"+ imageCount +".jpg";
+	clearInterval(time); 								// clear interval stops the set interval.
+	time =  window.setInterval(function photoA() { 		// givig the value of time the samfunction below starts the loop
+	var image = document.getElementById('image');
+	imageCount = imageCount + 1;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}
+	image.src = "Images/img"+ imageCount +".jpg";
+	},2000);
+	}
+
+var time = window.setInterval(function photoA() {    // just addign the sunction to the variable so you can target it.
+	var image = document.getElementById('image');
+	imageCount = imageCount + 1;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}
+	image.src = "Images/img"+ imageCount +".jpg";
+	},2000);
