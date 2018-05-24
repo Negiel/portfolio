@@ -75,8 +75,13 @@ p {
   background-size: cover;
   width: 100%;
   min-height: 600px;
+  margin-top: 50px;
+  box-shadow: 1em 1em 145px rgb(66, 134, 244);
 }
 
+.home {
+  margin-bottom: 70px;
+}
 .social_media {
   display: block;
   text-align: right;
@@ -106,40 +111,4 @@ p {
 .linkedin {
   background-image: url('../../images/linkedin.svg');
 
-}
-div.main .jumbotron{
-  background-image: url("");
-  background-color: pink;
-}
-
-figure img {
-  width: 100%;
-  height: auto;
-}
-
-figure {
-  margin-bottom: 20px;
-}
-
-section.container .row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-div.aboutme p {
-  font-size: 20px;
-  color: red;
-  margin-left: 30px;
-}
-
-.photome {
-  margin-top: 45px;
-}
-
-h3 {
-  text-align: right;
-  font-weight: bold;
-  color: blue;
 }
