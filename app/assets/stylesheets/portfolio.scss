@@ -2,18 +2,14 @@
 	margin:0px;
 	}
 #slider {
-	height:600px;
-	width: 1000px;
-	margin: 50px auto;
-	position:relative;
-	border-radius:4px;
-	overflow:hidden;
-  box-shadow: 12px 12px 145px 10px rgb(66, 134, 244), 5px 5px 5px rgb(66, 134, 244);
+  height: 50%;
+	width: 50%;
+	margin: auto 25% 20px;
 	}
 #image {
-	height: 600px;
-	width: 1000px;
-	position:absolute;
+	height: 100%;
+	width: 100%;
+	box-shadow: 12px 12px 145px 10px rgb(66, 134, 244), 5px 5px 5px rgb(66, 134, 244);
 	}
 .left_hold {
 	height: 400px;
