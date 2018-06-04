@@ -6,18 +6,18 @@ div.content > img {
   margin-right: auto;
   margin-bottom: 3em;
   box-shadow: 12px 12px 145px 10px rgb(66, 134, 244), 5px 5px 5px rgb(66, 134, 244);
-  width: 75%;
+  width: 100%;
 }
 
 div.content {
   margin-left: auto;
   margin-right: auto;
-  width: 50em;
 
 }
 
 div.content > p, div.content > h3 {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50em;
+  width: auto;
 }
