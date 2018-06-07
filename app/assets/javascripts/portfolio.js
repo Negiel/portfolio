@@ -6,14 +6,14 @@ function photo(x) {
 	imageCount = imageCount + x;
 	if(imageCount > total){imageCount = 1;}
 	if(imageCount < 1){imageCount = total;}
-	image.src = "Images/img"+ imageCount +".png";
+	image.src = "images/img"+ imageCount +".png";
 	clearInterval(time); 								// clear interval stops the set interval.
 	time =  window.setInterval(function photoA() { 		// givig the value of time the samfunction below starts the loop
 	var image = document.getElementById('image');
 	imageCount = imageCount + 1;
 	if(imageCount > total){imageCount = 1;}
 	if(imageCount < 1){imageCount = total;}
-	image.src = "Images/img"+ imageCount +".png";
+	image.src = "images/img"+ imageCount +".png";
 },4000);
 	}
 
@@ -22,5 +22,5 @@ var time = window.setInterval(function photoA() {    // just addign the sunction
 	imageCount = imageCount + 1;
 	if(imageCount > total){imageCount = 1;}
 	if(imageCount < 1){imageCount = total;}
-	image.src = "Images/img"+ imageCount +".png";
+	image.src = "images/img"+ imageCount +".png";
 },4000);
